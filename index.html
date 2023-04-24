@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cancer.gov-redesign</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <!-- We have 3 siblings (header, nav, and section) so that we can 
+    better seperate them in the layout-->
+
+    <!-- Header is at the top of the page -->
+    <header>
+        <a class="nav-icon__NCI" href='#'><img src="resources/National Cancer Institute.png"></a>
+        <div class="global-icons">
+            <button class="align-items" id="switch-language"> En Espanol</button>
+            <button class="align-items" id="global-nav">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- .sidenav helps us style each nav item and position the entire element to the left of the page -->
+    <nav class="sidenav">
+        <ul>
+            <h2>Common Well Being</h2>
+            <li id="about-cancer" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="about-cancer" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">About Cancer</a>
+                <div class="dropdown__menu" aria-labelledby="about-cancer">
+                    <a href="#" class="dropdown__item">Understanding Cancer</a>
+                    <a href="#" class="dropdown__item">Diagnosis & Staging</a>
+                    <a href="#" class="dropdown__item">Causes & Prevention</a>
+                    <a href="#" class="dropdown__item">Screening</a>
+                    <a href="#" class="dropdown__item">Advance Cancer</a>
+                </div>
+            </li>
+            <div id="Resources for you" class="dropdown-divider">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cancer-types" rolle="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Cancer Types</a>
+                    <div class="dropdown__menu" aria-labelledby="cancer-types">
+                        <a href="#" class="dropdown__item">Common Cancer Types</a>
+                        <a href="#" class="dropdown__item">A-Z list of Cancer Types</a>
+                        <a href="#" class="dropdown__item">Childhood Cancer</a>
+                        <a href="#" class="dropdown__item">Adolescents and Young Adults with Cancer</a>
+                        <a href="#" class="dropdown__item">Metastatic Cancer</a>
+                    </div>
+                </li>
+                <div id="Resources for you" class="dropdown-divider">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resources-for-you" rolle="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources for You</a>
+                        <div class="dropdown__menu" aria-labelledby="resources-for-you">
+                            <a href="#" class="dropdown__item">Managing Cancer Care</a>
+                            <a href="#" class="dropdown__item">Coping With Cancer</a>
+                            <a href="#" class="dropdown__item">Treatment & Clinical Trials</a>
+                            <a href="#" class="dropdown__item">Medical Dictionary</a>
+                            <a href="#" class="dropdown__item">Find Clinical Trial</a>
+                            <a href="#" class="dropdown__item">Contact Us</a>
+                        </div>
+                    </li>
+                </div>
+        </ul>
+        <ul>
+            <h2>Health Specialist</h2>
+            <li id="about-cancer" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="med-news-events" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">News and Events</a>
+                <div class="dropdown__menu" aria-labelledby="med-news-events">
+                    <a href="#" class="dropdown__item">All New Releases</a>
+                    <a href="#" class="dropdown__item">Media Resources</a>
+                    <a href="#" class="dropdown__item">N.C. Act 50th Anniversary</a>
+                    <a href="#" class="dropdown__item">Events</a>
+                    <a href="#" class="dropdown__item">Publications</a>
+                    <a href="#" class="dropdown__item">Covid-19 and Cancer</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- We use .content here to house and seperate the page's content to the right of the side nav bar-->
+    <section class="content">
+        <div class="heroImage">
+            <img src="resources/Health Specialist at Work.jpg" />
+        </div>
+        <!-- Use .flex to group "cards" together and position them in a row -->
+        <div class="flex">
+            <div id="cancer-biology" class="flex-item">
+                <img src="resources/Basic Cancer Biology.png" border="5">
+                <h2>Basic Cancer Biology</h2>
+            </div>
+            <div id="cancer-prevention" class="flex-item">
+                <img src="resources/Cancer Prevention.png" border="5">
+                <h2>Cancer Prevention</h2>
+            </div>
+            <div id="current-blog" class="flex-item">
+                <img src="resources/Cancer Current Blog.png" border="5">
+                <h2>Cancer Current Blog</h2>
+            </div>
+        </div>
+
+        <nav id="highlight">
+            <div class="video">
+                <h2> Cancer Education Video Series</h2>
+                <!--<video width="320" height="240" autoplay>-->
+                <iframe width="835" height="470" src="https://www.youtube.com/embed/LfpDJGwgctc"
+                    title="Charting New Courses: Cancer Moonshot Progress Video Series" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>"
+                <p>Dr. Shelley Hwang of Duke University describes the Human Tumor Atlas Network, an NCI-supported
+                    collaborative network that is constructing 3-dimensional atlases of the cellular, morphological,
+                    and molecular features of human cancers over time.</p>
+            </div>
+        </nav>
+        
+        <nav id="Leadership">
+            <h2>National Cancer Institute Leaders</h2>
+            <p>Information about NCI Director Monica M. Bertagnolli, M.D.,and other senior NCI leaders.</p>
+            <img src="resources/NCI leaders.png">
+        </nav>
+
+        <div class="Footer Menu">
+            <H2>About</H2>
+            <ul>
+                <li><button>About this Site</button></li>
+                <li><button> En Espanol </button></li>
+                <li><button> Reuse & Copy Right </button></li>
+                <li><button> Social Media </button></li>
+                <li><button> Contact Us </button></li>
+                <li> <button>Publications</button></li>
+            </ul>
+            <ul>
+                <H2>Policies</H2>
+                <ul>
+                    <li><button>Accessibility</button></li>
+                    <li><button> FOIA</button> </li>
+                    <li><button>Privacy & Security </button></li>
+                    <li><button> Disclaimers </button></li>
+                    <li><button> Vulnerability Disclosure</button></li>
+                </ul>
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
+</html>
